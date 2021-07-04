@@ -12,12 +12,12 @@ export function NavBar() {
         </li>
         <li>
           <DropdownOption name="Desenvolvedores">
-            <h1>Produtos</h1>
+            <h1>Desenvolvedores</h1>
           </DropdownOption>
         </li>
         <li>
-          <DropdownOption name="Produtos">
-            <h1>Produtos</h1>
+          <DropdownOption name="Empresa">
+            <h1>Empresa</h1>
           </DropdownOption>
         </li>
       </ul>

@@ -1,11 +1,17 @@
+import { ReactElement } from "react";
+
 import { NavBar } from "../NavBar";
 import styles from "./styles.module.scss";
 
-export function Layout() {
+interface LayoutProps {
+  children: ReactElement;
+}
+
+export function Layout({children}: LayoutProps) {
   return (
     <div className={styles.layoutContainer}>
       <div className={styles.wrapper}>
-        <NavBar />
+        {children}
       </div>
     </div>
   );
