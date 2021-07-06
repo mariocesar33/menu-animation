@@ -1,5 +1,7 @@
 import { ReactElement } from "react";
 
+import styles from "../NavBar/styles.module.scss";
+
 type DropdownOptionProps = {
   children: ReactElement;
   name: string;
@@ -7,8 +9,8 @@ type DropdownOptionProps = {
 
 export function DropdownOption({name, children}: DropdownOptionProps) {
   return (
-    <button>
-      {children}
+    <button className={styles.dropdownOption}>
+      {name}
     </button>
   );
 }
