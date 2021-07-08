@@ -9,7 +9,7 @@ interface LayoutProps {
 
 export function Layout({children}: LayoutProps) {
   return (
-    <div className={styles.layoutContainer}>
+    <div className={styles.layoutContainers}>
       <div className={styles.wrapper}>
         {children}
       </div>
